@@ -1,5 +1,10 @@
 public class Guess {
     public static void main(String[] args) {
-        System.out.println("Hi");
+        int sum = 0;
+       for(int i = 81297; i <= 100899; i+= 198)
+       {
+            sum += i;
+       }
+        System.out.println(sum);
     }
 }
