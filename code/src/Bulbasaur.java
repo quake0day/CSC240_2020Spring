@@ -47,4 +47,22 @@ public class Bulbasaur {
     {
         return id;
     }
+    public String toString()
+    {
+        String result = "Level:" + this.level + " ID: " + this.id;
+        return result;
+    }
+    public boolean equals(Bulbasaur bbs)
+    {
+        // compare the level and id
+        if(this.level == bbs.getLevel() && this.id == bbs.getID())
+            return true;
+        return false;
+    }
+    public Bulbasaur copy()
+    {
+        Bulbasaur temp = new Bulbasaur();
+        temp.setLevel(this.level);
+        return temp;
+    }
 }
