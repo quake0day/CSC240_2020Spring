@@ -51,9 +51,6 @@ public class PokemonDataAPI {
     // get pokemon name from ID
     public static String getPokemonName(String ID)
     {
-        String rawData = getData(ID);
-        // Extract the name of the Pokemon
-        // From the raw data.
 
         return "";
     }
@@ -63,7 +60,7 @@ public class PokemonDataAPI {
     public static String getPokemonImageURL(String ID)
     {
 
-        return "";
+            return "";
     }
 
     public static void displayImageFromURL(String URL) throws IOException
