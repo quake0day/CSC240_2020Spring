@@ -1,3 +1,5 @@
+package PokemonViewer;
+
 import java.net.*;
 import java.io.*;
 import java.nio.charset.Charset;
@@ -51,16 +53,22 @@ public class PokemonDataAPI {
     // get pokemon name from ID
     public static String getPokemonName(String ID)
     {
-
-        return "";
+        String rawData = getData(ID);
+        int startPos = rawData.indexOf("\"pokemon\":{\"name\":\"");
+        int endPos = rawData.indexOf("\",\"url\":\"");
+        String name = rawData.substring(startPos + 19, endPos);
+        return name;
     }
 
     // get pokemon icon url from ID
     // front shiny version
     public static String getPokemonImageURL(String ID)
     {
-
-            return "";
+        String rawData = getData(ID);
+        int startPos = rawData.indexOf("\"front_default\":\"");
+        int endPos = rawData.indexOf("\",\"front_shiny\"");
+        String URL = rawData.substring(startPos + 17, endPos);
+        return URL;
     }
 
     public static void displayImageFromURL(String URL) throws IOException

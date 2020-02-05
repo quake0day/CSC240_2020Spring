@@ -1,3 +1,5 @@
+package Chapter9;
+
 public class CharacterDemo {
     public static void main(String[] args) {
         // How to use the following methods in
