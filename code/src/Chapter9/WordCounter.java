@@ -31,7 +31,8 @@ public class WordCounter
 
     public static int wordCount(String str)
     {
-        return 0;
+        String[] s = str.split(" ");
+        return s.length;
     }
 
 }

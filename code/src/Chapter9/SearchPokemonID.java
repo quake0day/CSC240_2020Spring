@@ -20,7 +20,8 @@ public class SearchPokemonID {
         //System.out.println(searchWord);
         String[] pokemonName = getData(); // download pokemon name into an array
 
-        // Please write a program, ask the user to enter a name or the first few characters of a name of the Pokemon to search for in the array.
+        // Please write a program, ask the user to enter a name or
+        // the first few characters of a name of the Pokemon to search for in the array.
         // The program should display all of the names that match the user’s input and their corresponding ID.
         // e.g. User Input --> Mac
         // Output:
@@ -28,7 +29,14 @@ public class SearchPokemonID {
             // 67: "Machoke"
             // 68: "Machamp"
         // Your code goes here
-
+        for(int i = 1; i < pokemonName.length; i++)
+        {
+            //System.out.println(pokemonName[i]);
+            if(pokemonName[i].toLowerCase().startsWith(searchWord.toLowerCase()))
+            {
+                System.out.println(i + " : " +pokemonName[i]);
+            }
+        }
 
     }
 
