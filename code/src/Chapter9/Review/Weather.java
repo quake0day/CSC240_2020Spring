@@ -17,6 +17,24 @@ public class Weather {
         String[] weatherData = getData(); 
         
         // Your code goes here
+        // peaking the data
+//        for(int i = 0; i < weatherData.length; i++)
+//        {
+//            System.out.println(weatherData[i]);
+//        }
+
+        double highestTemperatureDailyMean = -9999;
+        for(int i = 1; i < weatherData.length; i++)
+        {
+            System.out.println(weatherData[i]);
+            String[] data = weatherData[i].split(";");
+
+            String temperatureDailyMeanString = data[5];
+            double temperatureDailyMean = Double.parseDouble(temperatureDailyMeanString);
+            if(temperatureDailyMean > highestTemperatureDailyMean)
+                highestTemperatureDailyMean = temperatureDailyMean;
+        }
+        System.out.println(highestTemperatureDailyMean);
 
     }
 
