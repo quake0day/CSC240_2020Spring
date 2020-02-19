@@ -1,5 +1,7 @@
-package Chapter9;
+package Chapter9.Review;
 
+
+// Review Question 6
 import java.util.Scanner;
 
 public class WordSeperator {

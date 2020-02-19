@@ -1,4 +1,6 @@
-package Chapter9;
+package Chapter9.Review;
+
+// Answers for Review Question 4 Ver 1
 
 import java.util.Scanner;
 

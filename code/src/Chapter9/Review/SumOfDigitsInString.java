@@ -1,5 +1,6 @@
-package Chapter9;
+package Chapter9.Review;
 import java.util.Scanner;
+// Answers for Review Question 4 ver 2
 
 public class SumOfDigitsInString {
     public static void main(String[] args) {

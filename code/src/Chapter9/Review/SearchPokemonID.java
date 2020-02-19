@@ -1,4 +1,6 @@
-package Chapter9;
+package Chapter9.Review;
+
+// Answers for Review Question 3
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
