@@ -17,7 +17,69 @@ public class Weather {
         String[] weatherData = getData(); 
         
         // Your code goes here
+        // peaking the data
+//        for(int i = 0; i < weatherData.length; i++)
+//        {
+//            System.out.println(weatherData[i]);
+//        }
 
+        double highestTemperatureDailyMean = -9999;
+        int count = 0;
+        int sum = 0;
+        int count2 = 0;
+        for(int i = 1; i < weatherData.length; i++)
+        {
+            System.out.println(weatherData[i]);
+            String[] data = weatherData[i].split(";");
+            // for q1
+            String temperatureDailyMeanString = data[5];
+            double temperatureDailyMean = Double.parseDouble(temperatureDailyMeanString);
+            if(temperatureDailyMean > highestTemperatureDailyMean)
+                highestTemperatureDailyMean = temperatureDailyMean;
+
+
+            // for q2
+            String relativeHumidityDailyMeanString = data[6];
+            double relativeHumidityDailyMean = Double.parseDouble(relativeHumidityDailyMeanString);
+            if(relativeHumidityDailyMean > 60)
+            {
+                count ++;
+            }
+
+            // for q3
+            String month = data[1];
+            if(month.equals("04")) // April's data
+            {
+                sum += temperatureDailyMean;
+                count2++;
+            }
+        }
+        System.out.println(highestTemperatureDailyMean);
+        System.out.println(count);
+        System.out.println(sum / count2);
+        for(int k = 5; k < 11; k++)
+        {
+            System.out.println(getHighest(weatherData,k));
+        }
+
+    }
+
+
+    public static double getHighest(String[] weatherData, int index)
+    {
+
+        double highest = - 9999;
+        for(int i = 1; i < weatherData.length; i++) {
+            //System.out.println(weatherData[i]);
+            String[] data = weatherData[i].split(";");
+            // for q1
+            String dataString = data[index];
+            double dataNumber = Double.parseDouble(dataString);
+            if (dataNumber > highest)
+                highest = dataNumber;
+        }
+
+        return highest;
     }
 
 
