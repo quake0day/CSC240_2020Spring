@@ -2,11 +2,13 @@ package Chapter10.Example0;
 
 public class Insect
 {
-    private int lifespan = 0;
-    private String color = "";
+    private int lifespan;
+    private String color;
 
     public Insect()
     {
+            lifespan = 0;
+            color = "";
     }
     public void setLifespan(int days)
     {

@@ -6,9 +6,10 @@ public class SubClass1 extends SuperClass1
      Constructor
      */
 
-    public SubClass1()
+    public SubClass1(int k)
     {
-        a = 1;
+        super(999);
+        a = k;
         System.out.println("This is the " +
                 "subclass constructor.");
     }

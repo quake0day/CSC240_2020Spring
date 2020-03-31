@@ -7,7 +7,7 @@ public class SuperClass3
      @param arg An int.
      */
 
-    public void showValue(int arg)
+    public void showValue(int arg, String arg2, int arg3, double arg4, String arg5, int arg6, int arg7, int arg8, int arg9)
     {
         System.out.println("SUPERCLASS: " +
                 "The int argument was " + arg);
