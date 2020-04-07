@@ -5,4 +5,10 @@ public class Cat extends Animal {
     {
         name = "cat";
     }
+
+    public void eat(Food f)
+    {
+
+    }
+
 }

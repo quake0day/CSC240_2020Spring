@@ -7,6 +7,7 @@ public class Example {
         //Shape myShape = new Square(8);
         //myShape.show();
         Square s1 = new Square(8);
+        s1.show();
     }
 }
 

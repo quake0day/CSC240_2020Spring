@@ -4,4 +4,9 @@ public class Dog extends Animal {
     public Dog(){
         name = "dog";
     }
+
+    public void eat(Food f)
+    {
+
+    }
 }
