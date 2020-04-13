@@ -1,6 +1,5 @@
 package Chapter11;
 
-import java.sql.SQLOutput;
 
 public class ThrowExceptions {
     public static void main(String[] args) {
@@ -12,6 +11,7 @@ public class ThrowExceptions {
         catch (NullPointerException e)
         {
             System.out.println("........");
+            System.out.println(e.getMessage());
         }
     }
 }

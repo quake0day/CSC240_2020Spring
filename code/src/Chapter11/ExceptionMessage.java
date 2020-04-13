@@ -29,7 +29,7 @@ public class ExceptionMessage
             JOptionPane.showMessageDialog(null,
                     "The file was found.");
         }
-        catch (FileNotFoundException e)
+        catch (Exception e)
         {
             JOptionPane.showMessageDialog(null, e.getMessage());
         }

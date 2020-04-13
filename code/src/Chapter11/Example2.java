@@ -6,22 +6,20 @@ public class Example2 {
         Scanner keyboard = new Scanner(System.in);
         System.out.print("Please input a number:");
         double a = 0;
+        double b = 0;
+        double c = 0;
         try {
             a = keyboard.nextDouble();
+            c = a / b;
         }
         catch (InputMismatchException e)
         {
-            System.out.println("ERROR!! Please input a number!!!!");
+            System.out.println("Error input");
         }
         catch (Exception e)
         {
-            System.out.println("NOT INPUT MISMATCH EXCEPTION");
+            System.out.println("Exception captured!! ");
         }
-        finally
-        {
-            System.out.println("This is the last part");
-        }
-
-        System.out.println(a);
+        System.out.println(c);
     }
 }
