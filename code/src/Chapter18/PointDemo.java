@@ -44,6 +44,9 @@ public class PointDemo {
         System.out.println(result2);
 
        //sqLength(pString);
+
+        Point2<Integer> p2Integer = new Point2<>(1, 2);
+        System.out.println(p2Integer);
     }
 
     public static double sqLength(Point<? extends Number> p)
